@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Case Designed with Love</title>
     <!-- Site Favicon -->
     <link rel="icon" href="assets/img/favicon.png">
@@ -26,99 +25,346 @@
 </head>
 
 <body>
-    <!-- Header Area Start -->
+    <!-- hamburger menu start -->
+    <div class="offcanvas-menu">
+        <span class="menu-close">
+            <i class="fa fa-close"></i>
+        </span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="rounded-btn"><a href="#">Order Customized Case</a></li>
+        
+        </ul>
+        <div class="spacer-30"></div>
+        <div class="bottom-social-link text-center">
+            <a href="https://web.facebook.com/goforcase?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/goforcase" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/go4case/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="offcanvas-overlay"></div>
 
     <div class="header">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-8">
                     <div class="logo">
                         <a href="index.html">
                             <img src="assets/img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="main-menu">
+                <div class="col-md-8 text-right col-xs-4">
+                    <div class="main-menu hidden-sm hidden-xs">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li class="primary-btn"><a href="#">Order Customized Case</a></li>
+                            <li class="rounded-btn"><a href="#">Order Customized Case</a></li>
                         </ul>
                     </div>
+
+                    <div class="menu-triger">
+                        <a href="#">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                         </a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Header Area End  -->
-
-    <!-- Hero Area Start  -->
-
     <div class="hero-area">
         <div class="hero-carousel owl-carousel">
             <div class="single-slider">
                 <picture>
                     <source media="(max-width: 479px)" srcset="assets/img/m-banner-1.jpg">
                     <source media="(min-width: 479px)" srcset="assets/img/d-banner-1.jpg">
-                    <img src="assets/img/d-banner-1.jpg" width="100%" height="100%"/>
+                    <img src="assets/img/d-banner-1.jpg" width="100%" height="100%" />
                 </picture>
             </div>
             <div class="single-slider">
                 <picture>
                     <source media="(max-width: 479px)" srcset="assets/img/m-banner-2.jpg">
                     <source media="(min-width: 479px)" srcset="assets/img/d-banner-2.jpg">
-                    <img src="assets/img/d-banner-2.jpg" width="100%" height="100%"/>
+                    <img src="assets/img/d-banner-2.jpg" width="100%" height="100%" />
                 </picture>
             </div>
         </div>
     </div>
-
-    <!-- Hero Area End  -->
-
-    <!-- Selection Area Start  -->
-
-    <div class="section-padding">
+    <div class="section-padding material">
         <div class="container">
             <div class="row">
-                <div class="section-title text-center">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h3>Select your Mobile Model for Customised Case</h3>
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>Select your Mobile Model for Customised Case</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <div class="model-selection">
+                    <div class="model-selection text-center">
                         <div class="model-selection-form">
                             <select type="brand" class="form-control center-block selectdropdown" id="mobilebrand" name="mobilebrand" required>
-                                <option value=0 selected>Select Mobile Brand</option><option value=1>Apple</option><option value=2>Asus</option><option value=4>Coolpad</option><option value=5>Google</option><option value=6>Hauwei</option><option value=7>HTC</option><option value=8>Lava </option><option value=9>Lenovo</option><option value=10>LeECo</option><option value=11>LG</option><option value=12>Micromax</option><option value=13>Motorola</option><option value=14>Nokia </option><option value=15>One Plus </option><option value=16>Oppo</option><option value=17>Panasonic </option><option value=18>Samsung</option><option value=19>Sony</option><option value=20>Xiaomi</option><option value=21>YU</option><option value=22>Vivo</option><option value=24>ZTE</option><option value=25>Gionee</option>                </select>
+                                <option value=0 selected>Select Mobile Brand</option>
+                                <option value=1>Apple</option>
+                                <option value=2>Asus</option>
+                                <option value=4>Coolpad</option>
+                                <option value=5>Google</option>
+                                <option value=6>Hauwei</option>
+                                <option value=7>HTC</option>
+                                <option value=8>Lava </option>
+                                <option value=9>Lenovo</option>
+                                <option value=10>LeECo</option>
+                                <option value=11>LG</option>
+                                <option value=12>Micromax</option>
+                                <option value=13>Motorola</option>
+                                <option value=14>Nokia </option>
+                                <option value=15>One Plus </option>
+                                <option value=16>Oppo</option>
+                                <option value=17>Panasonic </option>
+                                <option value=18>Samsung</option>
+                                <option value=19>Sony</option>
+                                <option value=20>Xiaomi</option>
+                                <option value=21>YU</option>
+                                <option value=22>Vivo</option>
+                                <option value=24>ZTE</option>
+                                <option value=25>Gionee</option>
+                            </select>
                         </div>
-                    
                         <div class="Ssearchdropdown margintop">
                             <select type="brand" class="form-control center- block selectdropdown" id="mobilemodel" name="mobilemodel" required>
                                 <option value=0 selected>Select Mobile Model</option>
-                            </select>   
-                       
+                            </select>
                         </div>
+                        <div class="spacer-25"></div>
+                        <a href="" class="primary-btn">Proceed</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="featured-box">
+                        <div class="title">
+                            <h3>Fresh <span>Idea</span></h3>
+                        </div>
+                        <div class="featured-bg featured-bg-1"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nihil?</p>
+                        <a href="" class="primary-btn">View More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="featured-box">
+                        <div class="title">
+                            <h3>Fresh <span>Idea</span></h3>
+                        </div>
+                        <div class="featured-bg featured-bg-2"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nihil?</p>
+                        <a href="" class="primary-btn">View More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="featured-box">
+                        <div class="title">
+                            <h3>Fresh <span>Idea</span></h3>
+                        </div>
+                        <div class="featured-bg featured-bg-3"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nihil?</p>
+                        <a href="" class="primary-btn">View More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    
+                    <div class="featured-box">
+                        <div class="title">
+                            <h3>Fresh <span>Idea</span></h3>
+                        </div>
 
-    <!-- Selection Area End  -->
-
-    <!-- Selection Area End  -->
-
-    <!-- Selection Area End  -->
-
-
-    
-
-
-
+                            <div class="featured-bg featured-bg-4"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nihil?</p>
+                            <a href="" class="primary-btn">View More</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="featured-box">
+                        <div class="title">
+                            <h3>Fresh <span>Idea</span></h3>
+                        </div>
+                        <div class="featured-bg featured-bg-5"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, nihil?</p>
+                        <a href="" class="primary-btn">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-padding gradient section-bg-1 section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>All you need to do is</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-feature text-center">
+                        <i class="fa fa-file-picture-o icon"></i>
+                        <h3>Select your picture</h3>
+                        <p>Select the best selfie that always leaves a smit on your face when you look at it.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature text-center">
+                        <i class="fa fa-camera-retro icon"></i>
+                        <h3>Customize your case</h3>
+                        <p>Upload the image and just customize it for the mobile case you have.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature text-center">
+                        <i class="fa fa-gift icon"></i>
+                        <h3>Get your case printed</h3>
+                        <p>You are all set. Rest is on us. We will make sure you get something special.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="" class="primary-btn">Create Selfie Case</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>Our Customers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row customer-image">
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus1.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus2.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus3.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus4.jpg" alt="">
+                </div>
+            </div>
+            <div class="row customer-image">
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus5.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus6.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus7.jpg" alt="">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <img src="assets/img/cus8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-padding gradient section-bg-1 section-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">
+                        <h2>Confused which picture suits your case?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-feature">
+                        <i class="fa fa-phone icon"></i>
+                        <h3>Whatsapp/Email your best pictures</h3>
+                        <p><i class="fa fa-whatsapp"></i> 9500043400</p>
+                        <p><i class="fa fa-envelope"></i>support@goforcase.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature ">
+                        <i class="fa fa-paint-brush icon"></i>
+                        <h3>We will design some nice cases</h3>
+                        <p>We will send you some design ideas for the case with the picture you sent us.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-feature">
+                        <i class="fa fa-gift icon"></i>
+                        <h3>Choose the one you like</h3>
+                        <p>Reply us with the design that you like the most. That's it. You'll have your own customized case.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-padding material">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="section-title left">
+                        <h2>Looking for More Customize Ideas?</h2>
+                    </div>
+                    <p>Update the Stylishness in you by letting us share some of the Case Styles and Collections through our newsletter.Staying in vogue is just one click away, hit the subscribe button</p>
+                </div>
+                <div class="col-md-5">
+                    <div class="spacer-25"></div>
+                    <div class="subscribe-form text-right">
+                        <form action="">
+                            <input type="email" placeholder="Enter Your Email">
+                            <input type="submit" value="Subcribe">
+                        </form>
+                    </div>
+                    <div class="social-link">
+                        <a href="https://web.facebook.com/goforcase?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/goforcase" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/go4case/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                </div>
+                <div class="col-md-6 col-sm-4">
+                    &copy;2018 goforcase.com
+                </div>
+                <div class="col-md-6 col-sm-8">
+                    <div class="footer-link text-right">
+                        <a href="">Contact Us</a>
+                        <a href="">Terms and Condition</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Jquery Library -->
     <script src="assets/js/jquery1.12.4.min.js"></script>
     <!-- Owl Carousel JS -->
@@ -129,7 +375,6 @@
     <script src="assets/js/jquery.slicknav.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/scripts.js"></script>
-    
 </body>
 
 </html>

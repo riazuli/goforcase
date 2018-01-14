@@ -8,7 +8,19 @@
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+.single-feature {
+    min-height: auto;
+}
+.subscribe-form.text-right {
+    text-align: left;
+}
 
+.social-link {
+    text-align: left;
+}
+.menu-triger {
+    display: block;
+}
     
 }
 
@@ -16,7 +28,34 @@
 
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
+	.menu-triger {
+    display: block;
+}
+.single-feature {
+    min-height: auto;
+}
+.subscribe-form.text-right {
+    text-align: left;
+}
 
+.social-link {
+    text-align: left;
+}
+.menu-triger {
+    display: block;
+}
+.footer, .footer
+ .text-right {
+    text-align: center;
+}
+
+.footer-link {
+    margin-top: 20px;
+}
+.hero-area .owl-dots {
+    position:  relative;
+    background-color: #DFDFDF;
+}
 }
 
 
